@@ -3,7 +3,7 @@ package JogoTabulero;
 public class Tabuleiro {
 	private int linha;
 	private int coluna;
-	private Peca[][] peca;
+	protected Peca[][] peca;
 	
 	public Tabuleiro(int linha, int coluna) {
 		this.linha = linha;
@@ -28,5 +28,8 @@ public class Tabuleiro {
 		this.coluna = coluna;
 	}
 	
-	
+	public Peca peca(int linha, int coluna) {
+		return peca[linha][coluna];
+		
+	}
 }
